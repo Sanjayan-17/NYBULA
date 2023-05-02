@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <script>
+      function passwordmismatch() {
+       var pw = document.createElementbyid('psw1').value;
+       var pw2 = document.createElementbyid('psw2').value;
+       if (pw == "") {
+        alert("Fill the password please")
+       }
+       if (pw.length <8) {
+        alert("Password must be at least 8 characters")
+       }
+       if (pw!=pw2) {
+        alert("Password mismatch")
+       }
+      }
+
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Employee Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+      
+      </head>
+      <body>
+        <h1><center>Employee Registration Form</center><h1>
+        <br><br>
+       <div align="center" style= "font-weight: bold;">
+        <br><br>
+        <table align="center" cellpadding = "10" style="background-color: white" width="480" height="300">
+          <form action="/login" method="post">
+        <tr>
+          <td align="center">
+            Create your account
+          </td>
+        </tr>
+        <tr>
+          <td><input type = "text" style = "height:50px;width:450px;" align = "center" name="username" placeholder="Enter username*"></td>
+        </tr>
+        <tr>
+          <td><input type = "password" name = "password" style = "height:50px;width:450px;" placeholder="Enter password*"></td>
+        </tr>
+        <tr>
+          <td><input type = "password" name = "confirmPassword" style = "height:50px;width:450px;" placeholder="Confirm password*"></td>
+        </tr>
+        <tr>
+          <td colspan = "2" align="center" > <button type = "submit" id="btn1" name="btn">Register</button>
+          </td>
+        </tr>
+      </form>
+      </table>
+       <div>
+      </body>
+</html>
